@@ -12,6 +12,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
@@ -76,6 +80,38 @@ body {
 }
 
 
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  align-items: center;
+  display: flex;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  width: 100%;
+  height: 100%;
+  color: var(--bg);
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  color: var(--bg);
+  margin-right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -128,17 +164,17 @@ body {
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-.about, .menu, .contact {
+.about, .menu, .products, .contact {
   padding: 10rem 7% 1.4rem;
 }
 
-.about h2, .menu h2, .contact h2 {
+.about h2, .menu h2, .products h2, .contact h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
 }
 
-.about h2 span, .menu h2 span, .contact h2 span {
+.about h2 span, .menu h2 span, .products h2 span, .contact h2 span {
   color: var(--primary);
 }
 
@@ -318,6 +354,11 @@ footer .links a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+  
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
   }
 
   .about .row {
