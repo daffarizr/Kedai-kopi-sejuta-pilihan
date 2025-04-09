@@ -1,181 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kopi Sejuta Pilihan</title>
-
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
-    <a href="#" class="navbar-logo">Sejuta<span>pilihan</span>.</a>
-
+    <a href="#" class="navbar-logo">Kopi<span>Sejuta Pilihan</span></a>
     <div class="navbar-nav">
-      <a href="#">Home</a>
-      <a href="#about">Tentang Kami</a>
+      <a href="#">Beranda</a>
+      <a href="#tentang">Tentang Kami</a>
       <a href="#menu">Menu</a>
-      <a href="#contact">Kontak</a>
+      <a href="#produk">Produk Unggulan</a>
+      <a href="#kontak">Kontak</a>
     </div>
-
     <div class="navbar-extra">
       <a href="#" id="search-button"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
       <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div>
-
-    <div class="search-form">
-      <input type="search" id="search-box" placeholder="search here...">
-      <label for="search-box"><i data-feather="search"></i></label>
     </div>
   </nav>
 
-
-
-  <section class="hero" id="home">
+  <!-- Hero Section -->
+  <section class="hero" id="beranda">
     <main class="content">
-      <h1>Mari Nikmati Pilihan Kopimu</h1>
-      <p>
-        "Selamat datang di Sejuta Pilihan, surga bagi para pecinta kopi! Kami percaya bahwa setiap orang memiliki selera kopi yang unik, dan itulah mengapa kami menawarkan beragam pilihan kopi dari seluruh penjuru Indonesia. Dari biji kopi Arabika yang lembut hingga Robusta yang kuat, kami memiliki semuanya. Temukan rasa favoritmu dan nikmati pengalaman ngopi yang tak terlupakan bersama kami."
-      </p>
-      <a href="#" class="cta">Beli Sekarang</a>
+      <h1>Temukan <span>Kenikmatan</span> dalam Setiap Tegukan</h1>
+      <p>Kopi pilihan terbaik dari berbagai daerah Indonesia.</p>
+      <a href="#menu" class="cta">Lihat Menu</a>
     </main>
   </section>
 
-
-  <section id="about" class="about">
+  <!-- Tentang Kami -->
+  <section id="tentang" class="tentang">
     <h2><span>Tentang</span> Kami</h2>
-
     <div class="row">
-      <div class="about-img">
-        <img src="about.jpg" alt="Tentang Kami">
+      <div class="tentang-img">
+        <img src="tentang-kami.jpg" alt="Tentang Kami" />
       </div>
       <div class="content">
         <h3>Kenapa memilih kopi kami?</h3>
-        <p>
-          "Kopi yang kami sajikan dibuat dengan bahan pilihan. Setiap cangkirnya memiliki cita rasa khas yang menggugah selera!"
-        </p>
-        <p>
-          "Kami mengutamakan kualitas dengan proses yang teliti dan hati-hati. Nikmati pengalaman minum kopi terbaik hanya di sini."
-        </p>
+        <p>Kami menghadirkan biji kopi terbaik yang dipilih langsung dari petani lokal.</p>
+        <p>Disangrai dengan teknik khusus untuk menjaga cita rasa autentik setiap cangkirnya.</p>
       </div>
     </div>
   </section>
 
-
+  <!-- Menu -->
   <section id="menu" class="menu">
     <h2><span>Menu</span> Kami</h2>
-    <p>
-      "Kami menyediakan berbagai pilihan kopi berkualitas tinggi. Dari biji terbaik hingga teknik penyeduhan yang tepat, setiap cangkir dibuat dengan penuh perhatian. Nikmati aroma yang khas, rasa yang kaya, dan pengalaman yang tak terlupakan di setiap tegukan!"
-    </p>
-
+    <p>Beragam pilihan minuman kopi dan camilan terbaik.</p>
     <div class="row">
       <div class="menu-card">
-        <img src="1.jpg" alt="ekspresso" class="menu-card-img">
-        <h3 class="menu-card-title">- Ekspresso -</h3>
-        <p class="menu-card-price">
-          IDR 25K
-        </p>
+        <img src="menu1.jpg" alt="Espresso" class="menu-card-img" />
+        <h3 class="menu-card-title">- Espresso -</h3>
+        <p class="menu-card-price">Rp 18.000</p>
       </div>
       <div class="menu-card">
-        <img src="1.jpg" alt="ekspresso" class="menu-card-img">
-        <h3 class="menu-card-title">- Americano -</h3>
-        <p class="menu-card-price">
-          IDR 23K
-        </p>
-      </div>
-      <div class="menu-card">
-        <img src="1.jpg" alt="ekspresso" class="menu-card-img">
+        <img src="menu2.jpg" alt="Latte" class="menu-card-img" />
         <h3 class="menu-card-title">- Latte -</h3>
-        <p class="menu-card-price">
-          IDR 25K
-        </p>
+        <p class="menu-card-price">Rp 22.000</p>
       </div>
       <div class="menu-card">
-        <img src="1.jpg" alt="ekspresso" class="menu-card-img">
+        <img src="menu3.jpg" alt="Cappuccino" class="menu-card-img" />
         <h3 class="menu-card-title">- Cappuccino -</h3>
-        <p class="menu-card-price">
-          IDR 20K
-        </p>
+        <p class="menu-card-price">Rp 24.000</p>
       </div>
     </div>
   </section>
 
-  <section id="products" class="products">
-    <h2><span>Produk Unggulan</span> Kami</h2>
-    <p>
-      "Temukan Produk Unggulan Kami dengan Kualitas Terbaik, Rasa Istimewa, dan Pilihan Terbaik untuk Anda"
-    </p>
+  <!-- Produk Unggulan -->
+  <section id="produk" class="produk">
+    <h2><span>Produk</span> Unggulan</h2>
+    <p>Kopi kemasan pilihan untuk dinikmati kapan saja.</p>
+    <div class="row">
+      <div class="produk-card">
+        <img src="produk1.jpg" alt="Arabica Premium" class="produk-card-img" />
+        <h3 class="produk-card-title">Arabica Premium</h3>
+        <p class="produk-card-price">Rp 75.000 / 250g</p>
+      </div>
+      <div class="produk-card">
+        <img src="produk2.jpg" alt="Robusta Strong" class="produk-card-img" />
+        <h3 class="produk-card-title">Robusta Strong</h3>
+        <p class="produk-card-price">Rp 68.000 / 250g</p>
+      </div>
+    </div>
   </section>
 
-
-  <section id="contact" class="contact">
+  <!-- Kontak -->
+  <section id="kontak" class="kontak">
     <h2><span>Kontak</span> Kami</h2>
-    <p>
-      Hubungi kami untuk informasi lebih lanjut. Kami siap membantu.
-    </p>
-  </p>
+    <p>Hubungi kami untuk pemesanan atau kerjasama.</p>
+    <div class="row">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-group">
+          <i data-feather="message-square"></i>
+          <textarea placeholder="Pesan" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+    </div>
+  </section>
 
-  <div class="row">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7936.86393217868!2d106.9700543!3d-6.2382695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b2769a0dbb1%3A0x301576d14febd40!2sBekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1710570000000"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade" class="map">
-    </iframe>
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+    </div>
+    <div class="credit">
+      <p>Created by <a href="#">Daffarizr</a>. &copy; 2025</p>
+    </div>
+  </footer>
 
-    <form action="">
-      <div class="input-group">
-        <i data-feather="user"></i>
-        <input type="text" placeholder="nama">
-      </div>
-      <div class="input-group">
-        <i data-feather="mail"></i>
-        <input type="text" placeholder="email">
-      </div>
-      <div class="input-group">
-        <i data-feather="phone"></i>
-        <input type="text" placeholder="nohp">
-      </div>
-      <button type="submit" class="btn">kirim pesan</button>
-    </form>
-  </div>
-</section>
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
 
-
-
-<footer>
-  <div class="social">
-    <a href="#"><i data-feather="youtube"></i></a>
-  </div>
-
-  <div class="links">
-    <a href="#home">Home</a>
-    <a href="#about">Tentang Kami</a>
-    <a href="menu">Menu</a>
-    <a href="contact">Kontak</a>
-  </div>
-
-  <div class="credit">
-    <p>
-      <p>
-        &copy; 2025 Daffa | Dibuat berdasarkan tutorial WPU - untuk latihan pribadi
-      </p>
-    </p>
-  </div>
-</footer>
-
-<script>
-  feather.replace();
-</script>
-
-<script src="script.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
